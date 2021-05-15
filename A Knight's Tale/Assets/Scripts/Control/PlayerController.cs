@@ -9,8 +9,8 @@ namespace KnightTale.Control
   private void Update()
     {
      if(ClickToFight()) return;
-      if(ClickToMove()) return;
-      print("There is nothing for you here!");
+     if(ClickToMove()) return;
+     print("There is nothing for you here!");
     }
 
     //lookup explanation
@@ -29,7 +29,6 @@ namespace KnightTale.Control
         }
           return true;
       }
-
       return false;
     }
 
@@ -42,7 +41,7 @@ namespace KnightTale.Control
       {
         if(Input.GetMouseButtonDown(0))
         {
-          GetComponent<MoveController>().MoveToPoint(hitInfo.point);
+          GetComponent<MoveController>().StartMoveAction(hitInfo.point);
         }
 
         return true;
