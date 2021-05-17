@@ -1,7 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using KnightTale.Combat;
 using KnightTale.Core;
 using UnityEngine;
 using UnityEngine.AI;
@@ -10,12 +6,16 @@ using UnityEngine.AI;
   public class MoveController : MonoBehaviour, IAction
   {
     NavMeshAgent navMeshAgent;
+    Health health;
 
-    private void Start() {
+    private void Awake() {
       navMeshAgent = GetComponent<NavMeshAgent>();
+      health = GetComponent<Health>();
     }
+   
 
     private void Update() {
+      navMeshAgent.enabled = !health.GetIsDead();
       UpdateAnimator();
     }
 
@@ -36,7 +36,6 @@ using UnityEngine.AI;
     }
     private void UpdateAnimator()
     {
-      //lookup the explanation for this
       Vector3 velocity = navMeshAgent.velocity;
       Vector3 localVelocity = transform.InverseTransformDirection(velocity);
       float speed = localVelocity.z;

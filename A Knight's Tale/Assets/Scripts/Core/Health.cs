@@ -1,5 +1,5 @@
 using UnityEngine;
-namespace KnightTale.Combat
+namespace KnightTale.Core
 {
   public class Health : MonoBehaviour {
     [SerializeField] float health = 20f;
@@ -24,6 +24,7 @@ namespace KnightTale.Combat
       if(isDead) return;
       isDead = true;
       GetComponent<Animator>().SetTrigger("die");
+      GetComponent<ActionPrio>().CancelCurrentAction();
     }
   }
 }

@@ -1,3 +1,4 @@
+using KnightTale.Core;
 using UnityEngine;
 
 namespace KnightTale.Combat{

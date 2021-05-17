@@ -26,6 +26,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f45944cb01d59f40ac6fd2756f5a533, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1019293125888744180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6345604559822107385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72c243c5b118af64db824435c79bd95c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4967471960308215882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6345604559822107385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 385abfa607037ad4d8164ac3102fd991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chasingDist: 5
+--- !u!114 &5160148105749095841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6345604559822107385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8ae81ff79b7bd74baf8d62625b461c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8044333264746503895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39,18 +76,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 20
---- !u!114 &5160148105749095841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6345604559822107385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8ae81ff79b7bd74baf8d62625b461c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &7117195760210786818
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58,6 +83,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2464249003434072580, guid: 61bd5b4ce8ad66644bd6a15af1bb536b, type: 3}
+      propertyPath: m_Speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4239372070368839931, guid: 61bd5b4ce8ad66644bd6a15af1bb536b, type: 3}
       propertyPath: m_Name
       value: Enemy

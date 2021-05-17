@@ -60,14 +60,14 @@ namespace KnightTale.Combat{
       return Vector3.Distance(transform.position, target.transform.position) < attackRange;
     }
 
-    public bool CanAttack(CombatTarget combatTarget){
+    public bool CanAttack(GameObject target){
 
-      if(combatTarget == null) return false;
-      Health targetToTest = combatTarget.GetComponent<Health>();
+      if(target == null) return false;
+      Health targetToTest = target.GetComponent<Health>();
       return targetToTest != null && !targetToTest.GetIsDead();
     }
 
-    public void Attack(CombatTarget combatTarget)
+    public void Attack(GameObject combatTarget)
     {
       GetComponent<ActionPrio>().StartAction(this);
       target = combatTarget.GetComponent<Health>();
