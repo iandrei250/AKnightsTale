@@ -77,6 +77,7 @@ namespace KnightTale.Combat{
     {
       GetComponent<Animator>().SetTrigger("stopAttack");
       target = null;
+      GetComponent<MoveController>().Cancel();
     }
   }//end of class
 }

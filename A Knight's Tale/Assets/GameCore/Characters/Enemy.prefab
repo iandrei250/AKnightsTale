@@ -51,6 +51,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chasingDist: 5
+  susTime: 5
+  patrol: {fileID: 0}
+  waypointTolerance: 1
+  dwellAtWaypoint: 3
 --- !u!114 &5160148105749095841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,6 +91,10 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2580051150656266294, guid: 61bd5b4ce8ad66644bd6a15af1bb536b, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ee6e32f8790bee2478033a7e0413cb05, type: 2}
     - target: {fileID: 4239372070368839931, guid: 61bd5b4ce8ad66644bd6a15af1bb536b, type: 3}
       propertyPath: m_Name
       value: Enemy
