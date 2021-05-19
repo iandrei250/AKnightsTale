@@ -103,5 +103,5 @@ namespace KnightTale.Combat{
       Gizmos.color = Color.red;
       Gizmos.DrawWireSphere(transform.position, chasingDist);
     }
-  }
+  }//end of class
 }

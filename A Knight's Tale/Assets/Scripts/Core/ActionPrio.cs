@@ -18,6 +18,6 @@ namespace KnightTale.Core{
     public void CancelCurrentAction(){
       StartAction(null);
     }
-  }
+  }//end of class
 
 }

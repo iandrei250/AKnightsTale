@@ -27,5 +27,5 @@ namespace KnightTale.Control{
     {
       return transform.GetChild(i).position;
     }
-  }
+  }//end of class
 }

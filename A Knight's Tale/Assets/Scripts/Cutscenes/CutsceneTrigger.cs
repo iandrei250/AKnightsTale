@@ -15,7 +15,7 @@ namespace KnightTale.Cutscenes{
         triggered = true;
       } 
     }
-  }
+  }//end of class
 }
 
 

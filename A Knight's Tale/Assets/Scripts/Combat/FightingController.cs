@@ -1,6 +1,8 @@
 using KnightTale.Movement;
 using UnityEngine;
 using KnightTale.Core;
+using UnityEngine.Audio;
+using KnightTale.Sound;
 
 namespace KnightTale.Combat{
     public class FightingController : MonoBehaviour,IAction {
@@ -49,9 +51,9 @@ namespace KnightTale.Combat{
       GetComponent<Animator>().SetTrigger("attack");
     }
 
-    //Animation event
     void Hit(){
       if(target == null ) return;
+      FindObjectOfType<AudioManager>().Play("HitSound");
       target.TakeDamage(damage);
     }
 
@@ -78,6 +80,10 @@ namespace KnightTale.Combat{
       GetComponent<Animator>().SetTrigger("stopAttack");
       target = null;
       GetComponent<MoveController>().Cancel();
+    }
+
+    public Health GetTarget(){
+      return target;
     }
   }//end of class
 }

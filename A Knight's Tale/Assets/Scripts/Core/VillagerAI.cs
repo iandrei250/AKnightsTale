@@ -54,6 +54,6 @@ namespace KnightTale.Core{
     {
       return Vector3.Distance(transform.position, GetCurrentWaypoint()) < waypointTolerance;
     }
-  }
+  }//end of class
 
 }

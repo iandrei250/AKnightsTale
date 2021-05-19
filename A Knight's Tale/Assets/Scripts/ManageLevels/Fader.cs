@@ -31,5 +31,5 @@ namespace KnightTale.ManageLevels{
             yield return null;
         }
     }
-  }
+  }//end of class
 }

@@ -23,5 +23,5 @@ namespace KnightTale.Core{
       GameObject spawningObject = Instantiate(toBeSpawned);
       DontDestroyOnLoad(spawningObject);
     }
-  }
+  }//end of class
 }

@@ -23,6 +23,6 @@ namespace KnightTale.Cutscenes{
         player.GetComponent<PlayerController>().enabled = true;
     }
 
-  }
+  }//end of class
 }
 
